@@ -80,6 +80,25 @@ let toptext = document.querySelectorAll(".top-content .text-content p")
 toptext[0].textContent = siteContent["main-content"]["features-content"]
 toptext[1].textContent = siteContent["main-content"]["about-content"]
 
+//bottom content block
+let midh4 = document.querySelectorAll(".bottom-content .text-content h4");
+midh4[0].textContent = siteContent["main-content"]["services-h4"]
+midh4[1].textContent = siteContent["main-content"]["product-h4"]
+midh4[2].textContent = siteContent["main-content"]["vision-h4"]
+
+let bottomtext = document.querySelectorAll(".bottom-content .text-content p")
+bottomtext[0].textContent = siteContent["main-content"]["services-content"]
+bottomtext[1].textContent = siteContent["main-content"]["product-content"]
+bottomtext[2].textContent = siteContent["main-content"]["vision-content"]
+
+// contact content
+let contacth4 = document.querySelector(".contact h4");
+contacth4.textContent = siteContent["contact"]["contact-h4"]
+
+let contacttext = document.querySelectorAll(".contact p");
+contacttext[0].textContent = siteContent["contact"]["address"]
+contacttext[1].textContent = siteContent["contact"]["phone"]
+contacttext[2].textContent = siteContent["contact"]["email"]
 
 //footer content
 let footercontent = document.querySelector("footer p");
