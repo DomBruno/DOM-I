@@ -40,3 +40,47 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctapic = document.getElementById("cta-img");
+ctapic.setAttribute('src', siteContent["cta"]["img-src"])
+
+let middleimg = document.getElementById("middle-img");
+middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+// nav content and style
+let navstyle = document.querySelectorAll("nav a");
+navstyle.forEach( (element) => {
+  element.style.color = "green";
+})
+
+let navlinks = document.querySelectorAll("nav a");
+navlinks[0].textContent = siteContent["nav"]["nav-item-1"]
+navlinks[1].textContent = siteContent["nav"]["nav-item-2"]
+navlinks[2].textContent = siteContent["nav"]["nav-item-3"]
+navlinks[3].textContent = siteContent["nav"]["nav-item-4"]
+navlinks[4].textContent = siteContent["nav"]["nav-item-5"]
+navlinks[5].textContent = siteContent["nav"]["nav-item-6"]
+
+//cta content and styling
+let ctatext = document.querySelector(".cta h1");
+ctatext.textContent = siteContent["cta"]["h1"]
+
+let ctabtn = document.querySelector(".cta button");
+ctabtn.textContent = siteContent["cta"]["button"]
+
+//main content and styling
+
+// top content block
+let toph4 = document.querySelectorAll(".top-content .text-content h4");
+toph4[0].textContent = siteContent["main-content"]["features-h4"]
+toph4[1].textContent = siteContent["main-content"]["about-h4"]
+
+let toptext = document.querySelectorAll(".top-content .text-content p")
+toptext[0].textContent = siteContent["main-content"]["features-content"]
+toptext[1].textContent = siteContent["main-content"]["about-content"]
+
+
+//footer content
+let footercontent = document.querySelector("footer p");
+footercontent.textContent = siteContent["footer"]["copyright"]
