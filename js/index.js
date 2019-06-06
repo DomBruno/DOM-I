@@ -103,3 +103,20 @@ contacttext[2].textContent = siteContent["contact"]["email"]
 //footer content
 let footercontent = document.querySelector("footer p");
 footercontent.textContent = siteContent["footer"]["copyright"]
+
+//create and prepend
+let newLink = document.createElement("a");
+newLink.textContent = "Privacy Policy";
+newLink.href = "#";
+newLink.style.color = 'green';
+
+
+navlinks[5].appendChild(newLink);
+
+let newLink2 = document.createElement("a");
+newLink2.textContent = "Home";
+newLink2.href = "#";
+newLink2.style.color = 'green';
+
+
+navlinks[0].prepend(newLink2);
