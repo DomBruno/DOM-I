@@ -109,6 +109,7 @@ let newLink = document.createElement("a");
 newLink.textContent = "Privacy Policy";
 newLink.href = "#";
 newLink.style.color = 'green';
+newLink.style.paddingLeft = "25px";
 
 
 navlinks[5].appendChild(newLink);
@@ -117,6 +118,17 @@ let newLink2 = document.createElement("a");
 newLink2.textContent = "Home";
 newLink2.href = "#";
 newLink2.style.color = 'green';
+newLink2.style.paddingRight = "25px";
 
 
 navlinks[0].prepend(newLink2);
+
+// stretch
+
+let newP = document.createElement("p");
+footercontent.appendChild(newP);
+
+let newBut = document.createElement("button");
+newBut.textContent = "Blinder";
+newBut.addEventListener('click', (event) => {event.bottomtext.visibility = "hidden"})
+newP.append(newBut);
