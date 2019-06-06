@@ -131,4 +131,4 @@ footercontent.appendChild(newP);
 let newBut = document.createElement("button");
 newBut.textContent = "Blinder";
 newBut.addEventListener('click', (event) => {event.bottomtext.visibility = "hidden"})
-newP.append(newBut);
+newP.appendChild(newBut);
